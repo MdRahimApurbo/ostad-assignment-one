@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assingment 1 😎</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/eb5a0fee9c.js" crossorigin="anonymous"></script>
+    <!-- Css Link -->
+
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/bootstrap.min.css">
+</head>
+
+<body class="bgColor">
+
+    <!-- Header Section -->
+    <header class=" sticky-top">
+        <!-- Side Bar Popup Mobile Menu-->
+        <div id="modelSidebarPopup" class="modelSidebarPopup overflow-hiddenr">
+            <div class="modelSidebarContainer">
+                <h2 id="closeIcon" class="closeicon text-white fw-bold text-right ">&#x2715;</h2>
+                <h2 class="text-white fw-bold text-left">Learn With Apurbo</h2>
+                <ul
+                    class=" m-0 p-0 d-flex flex-column gap-4 justify-content-between align-items-start fw-regular text-white pt-4">
+                    <li class="osfp-nav-item"><a class="osfp-nav-link text-white" href="#">About Me</a></li>
+                    <li class="osfp-nav-item "><a href="#" class="osfp-nav-link text-white">Js Dom</a></li>
+                    <li class="osfp-nav-item"><a class="osfp-nav-link text-white" href="#">Program</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container headersection d-flex align-items-center justify-content-between p-0 py-md-2">
+            <div>
+                <img class="nav-logo" src="src/img/logo.png" alt="Apurbo">
+            </div>
+            <div class="d-flex justify-content-between align-items-center gap-4">
+                <nav class="osfp-header d-none d-xl-block d-flex justify-content-between align-items-center gap-4">
+                    <ul class="osfp-navbar m-0 p-0 d-flex gap-4 justify-content-between align-items-center fw-regular">
+                        <li class="osfp-nav-item"><a class="osfp-nav-link" href="#">About Me</a></li>
+                        <li class="osfp-nav-item"><a class="osfp-nav-link" href="#">Code Generator</a></li>
+                        <li class="osfp-nav-item"><a class="osfp-nav-link" href="#">Program</a></li>
+                    </ul>
+                </nav>
+                <button id="openSideBar" class="osfp-button-nav d-xl-none ">
+                    <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2 5.99519C2 5.44556 2.44556 5 2.99519 5H11.0048C11.5544 5 12 5.44556 12 5.99519C12 6.54482 11.5544 6.99039 11.0048 6.99039H2.99519C2.44556 6.99039 2 6.54482 2 5.99519Z"
+                            fill="currentColor" />
+                        <path
+                            d="M2 11.9998C2 11.4501 2.44556 11.0046 2.99519 11.0046H21.0048C21.5544 11.0046 22 11.4501 22 11.9998C22 12.5494 21.5544 12.9949 21.0048 12.9949H2.99519C2.44556 12.9949 2 12.5494 2 11.9998Z"
+                            fill="currentColor" />
+                        <path
+                            d="M2.99519 17.0096C2.44556 17.0096 2 17.4552 2 18.0048C2 18.5544 2.44556 19 2.99519 19H15.0048C15.5544 19 16 18.5544 16 18.0048C16 17.4552 15.5544 17.0096 15.0048 17.0096H2.99519Z"
+                            fill="currentColor" />
+                    </svg>
+                </button>
+                <a href="#" class="osfp-button d-none d-xl-block">Contact Me</a>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- Container Section -->
+    <section class=" bg-white bannerImage d-flex  align-items-center  overflow-hidden">
+        <span class="overlay "></span>
+        <div class="container   py-5 px-2 z-2 ">
+            <div class="d-flex flex-column gap-4 align-items-center widthbanner">
+                <label class="text-white fw-bold fs-1 text-center" for="inputAge">Please Enter Your Age For Showing
+                    Contain</label>
+                <input id="inputAge" class="px-4 py-2 b-0" type="number" placeholder="Enter Your Age">
+                <h2 id="showAdult" class="cardAbove18 hide text-center ">You Are Adult 😎</h2>
+                <h2 id="showChildren" class="cardUnder18 hide text-center ">You Are Children 😎</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="bgWhiteColor containerPadding">
+        <div class="container">
+            <h2 class=" text-center fw-bold text-uppercase">All Adult and Children Details Info</h2>
+            <div class="overlayContional pt-5">
+                <div class="row equal-height g-2 overlayContional">
+                    <div class="cardUnder18 col-12 col-md-6 col-xl-4 equal-height  p-1 p-md-3">
+                        <div
+                            class="card p-4 flex-column align-items-center justify-content-between text-center card-image-box">
+                            <a href="#" class="text-decoration-none w-100">
+                                <img class="card-image"
+                                    src="https://img.freepik.com/free-photo/cute-baby-girl-1-year-old-near-santa-hat-posing-christmas-with-decoration-sitting-floor-with-christmas-ball_155003-24371.jpg?w=1380&t=st=1704731155~exp=1704731755~hmac=76eb5f278efe021ee5d4593b341ebc602c1949dae289bfe0944b4b55b0e935f1"
+                                    alt="">
+                            </a>
+                            <div class="d-flex pt-4 gap-2 flex-column justify-content-left align-items-left ">
+                                <h2 class="fw-bold fs-5">Children information</h2>
+                                <p class="fs-6 fw-normal">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla maxime itaque nobis
+                                    deleniti asperiores quidem! Error facere quaerat voluptatibus obcaecati ipsum, hic
+                                    adipisci dicta quis optio perspiciatis, deserunt eum eaque.
+                                </p>
+                                <button class="osfp-button">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardAbove18 col-12 col-md-6 col-xl-4 equal-height  p-1 p-md-3">
+                        <div
+                            class="card p-4 flex-column align-items-center justify-content-between text-center card-image-box">
+                            <a href="#" class="text-decoration-none w-100">
+                                <img class="card-image"
+                                    src="https://img.freepik.com/free-photo/brunette-business-woman-with-wavy-long-hair-blue-eyes-stands-holding-notebook-hands_197531-343.jpg?w=740&t=st=1704731650~exp=1704732250~hmac=17dd7374072bb18fdda229b10cfc293050d54de7926ba67959af10a1ff16cf84"
+                                    alt="">
+                            </a>
+
+                            <div class="d-flex pt-4 gap-2 flex-column justify-content-left align-items-left ">
+                                <h2 class="fw-bold fs-5">Adult People</h2>
+                                <p class="fs-6 fw-normal">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla maxime itaque nobis
+                                    deleniti asperiores quidem! Error facere quaerat voluptatibus obcaecati ipsum, hic
+                                    adipisci dicta quis optio perspiciatis, deserunt eum eaque.
+                                </p>
+                                <button class="osfp-button">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardUnder18 col-12 col-md-6 col-xl-4 equal-height  p-1 p-md-3">
+                        <div
+                            class="card p-4 flex-column align-items-center justify-content-between text-center card-image-box">
+                            <a href="#" class="text-decoration-none w-100">
+                                <img class="card-image"
+                                    src="https://img.freepik.com/free-photo/girl-elementary-school-student-with-backpack-book_169016-1839.jpg?w=996&t=st=1704792292~exp=1704792892~hmac=dd7de6dfc59007fda33232be5d39f1570e0004c8c4fa585dcb506856fa2fe417"
+                                    alt="">
+                            </a>
+
+                            <div class="d-flex pt-4 gap-2 flex-column justify-content-left align-items-left ">
+                                <h2 class="fw-bold fs-5">Children information</h2>
+                                <p class="fs-6 fw-normal">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla maxime itaque nobis
+                                    deleniti asperiores quidem! Error facere quaerat voluptatibus obcaecati ipsum, hic
+                                    adipisci dicta quis optio perspiciatis, deserunt eum eaque.
+                                </p>
+                                <button class="osfp-button">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardAbove18 col-12 col-md-6 col-xl-4 equal-height  p-1 p-md-3">
+                        <div
+                            class="card p-4 flex-column align-items-center justify-content-between text-center card-image-box">
+                            <a href="#" class="text-decoration-none w-100">
+                                <img class="card-image"
+                                    src="https://img.freepik.com/premium-photo/stylish-girl-exploring-city-park-autumn_1157-11634.jpg?w=740"
+                                    alt="">
+                            </a>
+
+                            <div class="d-flex pt-4 gap-2 flex-column justify-content-left align-items-left ">
+                                <h2 class="fw-bold fs-5">Adult People</h2>
+                                <p class="fs-6 fw-normal">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla maxime itaque nobis
+                                    deleniti asperiores quidem! Error facere quaerat voluptatibus obcaecati ipsum, hic
+                                    adipisci dicta quis optio perspiciatis, deserunt eum eaque.
+                                </p>
+                                <button class="osfp-button">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardUnder18 col-12 col-md-6 col-xl-4 equal-height  p-1 p-md-3">
+                        <div
+                            class="card p-4 flex-column align-items-center justify-content-between text-center card-image-box">
+                            <a href="#" class="text-decoration-none w-100">
+                                <img class="card-image"
+                                    src="https://img.freepik.com/free-photo/happy-sister-showing-her-brother-through-window-home_23-2147922910.jpg?w=740&t=st=1704792375~exp=1704792975~hmac=ff9c46d57791ace32b6a7b4a4e9f4eee144ca20d082edbecfc9d2136f1b21e53"
+                                    alt="">
+                            </a>
+
+                            <div class="d-flex pt-4 gap-2 flex-column justify-content-left align-items-left ">
+                                <h2 class="fw-bold fs-5">Children information</h2>
+                                <p class="fs-6 fw-normal">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla maxime itaque nobis
+                                    deleniti asperiores quidem! Error facere quaerat voluptatibus obcaecati ipsum, hic
+                                    adipisci dicta quis optio perspiciatis, deserunt eum eaque.
+                                </p>
+                                <button class="osfp-button">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardAbove18 col-12 col-md-6 col-xl-4 equal-height  p-1 p-md-3">
+                        <div
+                            class="card p-4 flex-column align-items-center justify-content-between text-center card-image-box">
+                            <a href="#" class="text-decoration-none w-100">
+                                <img class="card-image"
+                                    src="https://img.freepik.com/free-photo/surprised-happy-girl-pointing-left-recommend-product-advertisement-make-okay-gesture_176420-20191.jpg?w=1380&t=st=1704792202~exp=1704792802~hmac=ee2cdf858183dcefa7eef77f36824747830efec777e8ca3e301d41c426500123"
+                                    alt="">
+                            </a>
+
+                            <div class="d-flex pt-4 gap-2 flex-column justify-content-left align-items-left ">
+                                <h2 class="fw-bold fs-5">Adult People</h2>
+                                <p class="fs-6 fw-normal">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla maxime itaque nobis
+                                    deleniti asperiores quidem! Error facere quaerat voluptatibus obcaecati ipsum, hic
+                                    adipisci dicta quis optio perspiciatis, deserunt eum eaque.
+                                </p>
+                                <button class="osfp-button">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-footer-color overflow-hidden d-flex flex-column justify-content-center align-items-center footer">
+        <div class="container  p-0">
+            <div class="d-flex flex-column flex-md-row flex-md-wrap justify-content-between gap-4 gap-md-0">
+                <div class="col-12 col-md-6 col-xl-3 equal-height  p-0 ">
+                    <div
+                        class="card osfp-card-padding  footer-card flex-column align-items-center align-items-md-start justify-content-between text-left">
+                        <img class="nav-logo" src="src/img/logo.png" alt="Apurbo">
+                        <div class="d-flex flex-column gap-3 pt-4">
+                            <p class="fs-6 fw-normal text-light text-center text-md-start text-xl-start">
+                                We offer a comprehensive suite of services under one roof, ensuring a seamless and
+                                efficient digital transformation journey.
+                            </p>
+                            <div
+                                class="d-flex align-items-center align-items-md-start  justify-content-center justify-content-md-start gap-4">
+                                <a href="#" class="text-decoration-none">
+                                    <i class="fa-brands fa-facebook-f text-light"></i>
+                                </a>
+                                <a href="#" class="text-decoration-none">
+                                    <i class="fa-brands fa-linkedin-in text-light"></i>
+                                </a>
+                                <a href="#" class="text-decoration-none">
+                                    <i class="fa-brands fa-twitter text-light"></i>
+                                </a>
+                                <a href="#" class="text-decoration-none">
+                                    <i class="fa-brands fa-instagram text-light"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 equal-height p-sm-0 pt-4 ">
+                    <div
+                        class="card osfp-card-padding footer-card flex-column align-items-center align-items-md-start justify-content-between text-left">
+                        <h2 class="fw-regular fs-4 text-white py-0 ">Address</h2>
+                        <div class="d-flex flex-column gap-3 pt-3 pt-md-5 pt-xl-0">
+                            <div
+                                class="d-flex align-items-center align-items-md-start  justify-content-center justify-content-md-start  gap-3 pt-xl-5">
+                                <div class="list-div-left">
+                                    <i class="fa-solid fa-location-dot text-light fs-6"></i>
+                                </div>
+                                <div class="list-div-right m-0 p-0">
+                                    <h2 class="text-list-color fs-list m-0 p-0">Dhaka,Bangladesh</h2>
+                                </div>
+                            </div>
+                            <div
+                                class="d-flex align-items-center align-items-md-start  justify-content-center justify-content-md-start gap-2 ">
+                                <div class="list-div-left">
+                                    <i class="fa-regular fa-envelope text-light"></i>
+                                </div>
+                                <div class="list-div-right m-0 p-0">
+                                    <a href="mailto:programmerapurbocse@gmail.com" class="text-decoration-none">
+                                        <h2 class="text-list-color fs-list m-0 p-0">programmerapurbocse@gmail.com</h2>
+                                    </a>
+                                </div>
+                            </div>
+                            <div
+                                class="d-flex align-items-center align-items-md-start  justify-content-center justify-content-md-start gap-2 ">
+                                <div class="list-div-left">
+                                    <i class="fa-solid fa-phone text-light"></i>
+                                </div>
+                                <div class="list-div-right m-0 p-0">
+                                    <a href="tel:01521757321" class="text-decoration-none">
+                                        <h2 class="text-list-color fs-list m-0 p-0">01521757321</h2>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 equal-height  p-0">
+                    <div
+                        class="card osfp-card-padding pt-md-5 pt-xl-0 footer-card flex-column align-items-center align-items-md-start justify-content-between text-left">
+                        <h2 class="fw-regular fs-4 text-white py-0 ">Service</h2>
+                        <div class="d-flex flex-column gap-3 pt-4">
+                            <div
+                                class="d-flex align-items-center align-items-md-start justify-content-center justify-content-md-start gap-2 pt-xl-4">
+                                <a href="#" class="text-decoration-none">
+                                    <h2 class="text-list-color fs-list m-0 p-0">Web Design</h2>
+                                </a>
+                            </div>
+                            <div
+                                class="d-flex align-items-center align-items-md-start justify-content-center justify-content-md-start gap-2 ">
+                                <a href="#" class="text-decoration-none">
+                                    <h2 class="text-list-color fs-list m-0 p-0">Development</h2>
+                                </a>
+                            </div>
+                            <div
+                                class="d-flex align-items-center align-items-md-start justify-content-center justify-content-md-start gap-2 ">
+                                <a href="#" class="text-decoration-none">
+                                    <h2 class="text-list-color fs-list m-0 p-0">Digital Marketing</h2>
+                                </a>
+                            </div>
+                            <div
+                                class="d-flex align-items-center align-items-md-start justify-content-center justify-content-md-start gap-2 ">
+                                <a href="#" class="text-decoration-none">
+                                    <h2 class="text-list-color fs-list m-0 p-0">Graphic Design</h2>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 equal-height  p-0">
+                    <div
+                        class="card osfp-card-padding pt-md-5 pt-xl-0 footer-card flex-column align-items-center align-items-md-start justify-content-between text-left">
+                        <h2 class="fw-regular fs-4 text-white py-0 ">Get a free quote</h2>
+                        <form class="pt-4 pt-md-4 pt-xl-5">
+                            <div class="mb-3">
+                                <input type="email" class="form-control osfp-inputField" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Enter your email">
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control osfp-inputField" placeholder="Leave a comment here"
+                                    id="floatingTextarea"></textarea>
+                            </div>
+                            <button type="submit" class="osfp-button text-center w-100 w-md-auto">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-3 px-0 bottom-border bottom-footer">
+            <h2 class="text-center copyrighttext text-list-color  p-0 m-0">2024 @Copyright By Programmer Apurbo</h2>
+        </div>
+    </footer>
+    <!-- Scripts Link -->
+    <script src="src/js/scripts.js"></script>
+    <script src="src/js/bootstrap.min.js"></script>
+    <script src="src/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

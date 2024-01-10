@@ -3,6 +3,9 @@ body {
     position: relative;
 }
 
+.fs-opensans {
+    font-family: 'Open Sans', sans-serif;
+}
 
 :root {
     --primary-color: #5136bedb;
